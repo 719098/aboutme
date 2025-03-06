@@ -22,7 +22,7 @@
 	</script>
 </head>
 <body>
-	<?php echo date("Y-m-d") ?>
+	
 
 	<table width="100%" border="1">
 		<tr>
@@ -42,6 +42,7 @@
 	</table>
 
 	<h1>林亮辰</h1>
+	<h1><?php echo date("Y-m-d") ?></h1>
 	<h2>LIANG-CHEN LIN</h2>
 
 	學校網頁：<a href="https://www.pu.edu.tw/" target="_blank">靜宜大學</a><br>
