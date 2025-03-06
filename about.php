@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>林亮辰的簡介</title>
+	<style type="text/css">
+		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+		h1 {color:blue; font-size:60px;}
+		h2 {color:#33ff33; font-size:40px;}
+	</style>
+	<script>
+
+		function changeImage(imgId) {
+			document.getElementById(imgId).src = "7899.jpg"; 
+		}
+
+
+		function restoreImage(imgId, imgSrc) {
+			document.getElementById(imgId).src = imgSrc;
+		}
+	</script>
+</head>
+<body>
+	<?php echo date("Y-m-d") ?>
+
+	<table width="100%" border="1">
+		<tr>
+			<td>
+				<img src="images.jpg" width="100%" id="pic1" onmouseover="changeImage('pic1')" onmouseout="restoreImage('pic1', 'images.jpg')">
+				</img>
+			</td>
+			<td>
+				<img src="34567.jpg" width="90%" id="pic2" onmouseover="changeImage('pic2')" onmouseout="restoreImage('pic2', '34567.jpg')">
+				</img>
+			</td>
+			<td>
+				<img src="45678.jpg" width="80%" id="pic3" onmouseover="changeImage('pic3')" onmouseout="restoreImage('pic3', '45678.jpg')">
+				</img>
+			</td>
+		</tr>
+	</table>
+
+	<h1>林亮辰</h1>
+	<h2>LIANG-CHEN LIN</h2>
+
+	學校網頁：<a href="https://www.pu.edu.tw/" target="_blank">靜宜大學</a><br>
+	IG: _liang2002<br>
+	Tel: <a href="tel:0920882502">0920882502</a><br>
+	E-Mail: <a href="mailto:s1101746@pu.edu.tw">s1101746@pu.edu.tw</a><br>
+
+	大象席地而坐電影配樂<br>
+	<audio controls>
+		<source src="elephant.mp3" type="audio/mp3">
+	</audio><br>
+
+	不要去臺灣<br>
+	<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe><br>
+
+	<iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/10b1f07c-9494-4359-9bd1-5e3d19fb1ae0"></iframe>
+
+</body>
+</html>

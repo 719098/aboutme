@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>林亮辰首頁</title>
+	<style type="text/css">
+		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+		 body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+         a {
+            font-size: 50px; 
+            color: #0066cc;
+	</style>
+
+</head>
+<body>
+	<?php echo date("Y-m-d") ?>
+
+	<a href="about.html"target="westbrook">個人簡介<a/><br>
+	<a href="https://zh.wikipedia.org/zh-tw/%E6%8B%89%E5%A1%9E%E5%B0%94%C2%B7%E5%A8%81%E6%96%AF%E5%B8%83%E9%B2%81%E5%85%8B"target="westbrook">westbrook<a/><br>
+	 <iframe name="westbrook"
+	 width="1000" 
+	 height="1200" 
+	 src="https://www.youtube.com/embed/pT0eqOAqhdg" 
+	 allowfullscreen></iframe>
+</body>
+</html>
