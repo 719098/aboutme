@@ -12,28 +12,30 @@
 	<script>
 
 		function changeImage(imgId) {
-			document.getElementById(imgId).src = "7899.jpg"; 
+			document.getElementById(imgId).src = "/static/7899.jpg"; 
 		}
 
-
-		function restoreImage(imgId, imgSrc) {
-			document.getElementById(imgId).src = imgSrc;
-		}
+		function ppic1(imgId) {
+			document.getElementById(imgId).src = "/static/images.jpg"}
+		function ppic2(imgId) {
+			document.getElementById(imgId).src ="/static/34567.jpg"}
+		function ppic3(imgId) {
+			document.getElementById(imgId).src = "/static/45678.jpg"}
 	</script>
 </head>
 <body>
 	<table width="100%" border="1">
 		<tr>
 			<td>
-				<img src="images.jpg" width="100%" id="pic1" onmouseover="changeImage('pic1')" onmouseout="restoreImage('pic1', 'images.jpg')">
+				<img src="/static/images.jpg" width="100%" id="pic1" onmouseover="changeImage('pic1')" onmouseout="ppic1('pic1','images.jpg')">
 				</img>
 			</td>
 			<td>
-				<img src="34567.jpg" width="90%" id="pic2" onmouseover="changeImage('pic2')" onmouseout="restoreImage('pic2', '34567.jpg')">
+				<img src="/static/34567.jpg" width="90%" id="pic2" onmouseover="changeImage('pic2')" onmouseout="ppic2('pic2', '/34567.jpg')">
 				</img>
 			</td>
 			<td>
-				<img src="45678.jpg" width="80%" id="pic3" onmouseover="changeImage('pic3')" onmouseout="restoreImage('pic3', '45678.jpg')">
+				<img src="/static/45678.jpg" width="80%" id="pic3" onmouseover="changeImage('pic3')" onmouseout="ppic3('pic3', '/45678.jpg')">
 				</img>
 			</td>
 		</tr>
@@ -49,7 +51,7 @@
 
 	大象席地而坐電影配樂<br>
 	<audio controls>
-		<source src="elephant.mp3" type="audio/mp3">
+		<source src="/static/elephant.mp3" type="audio/mp3">
 	</audio><br>
 
 	不要去臺灣<br>
